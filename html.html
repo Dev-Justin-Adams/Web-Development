@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="html.css" />
+  </head>
+  <body>
+    <!--<button id="mode-toggle" class="toggle-button">🌞</button>-->
+
+    <nav id="navbar">
+      <header>Web Development Documentation</header>
+      <ul>
+        <li><a class="nav-link" href="#HTML_Introduction">HTML Introduction</a></li>
+        <li><a class="nav-link" href="#HTML_Basics">HTML Basics</a></li>
+        <li><a class="nav-link" href="#CSS_Introduction">CSS Introduction</a></li>
+        <li><a class="nav-link" href="#CSS_and_HTML">CSS and HTML</a></li>
+        <li><a class="nav-link" href="#Selectors">CSS Selectors</a></li>
+        <li><a class="nav-link" href="#Box_model">CSS Box Model</a></li>
+        <li><a class="nav-link" href="#Flexbox">Flexbox</a></li>
+        <li><a class="nav-link" href="#Grid">Grid Layout</a></li>
+        <li><a class="nav-link" href="#Reference">Reference</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+
+      <!-- HTML Section -->
+      <section class="main-section" id="HTML_Introduction">
+        <header>HTML Introduction</header>
+        <article>
+          <p>
+            HTML (HyperText Markup Language) is the standard markup language used to structure content on the web. It forms the backbone of a webpage and uses elements, represented by tags, to define various parts of the content, such as headings, paragraphs, lists, and links.
+          </p>
+        </article>
+      </section>
+
+      <section class="main-section" id="HTML_Basics">
+        <header>HTML Basics</header>
+        <article>
+          <p>
+            HTML consists of a series of elements. Each element is wrapped in angle brackets and typically consists of an opening tag, content, and a closing tag.
+          </p>
+          <ul>
+            <li><code>&lt;h1&gt;...&lt;/h1&gt;</code>: Defines a top-level heading.</li>
+            <li><code>&lt;p&gt;...&lt;/p&gt;</code>: Defines a paragraph.</li>
+            <li><code>&lt;a href="url"&gt;...&lt;/a&gt;</code>: Creates a hyperlink.</li>
+          </ul>
+          <p>
+            HTML5 introduced new semantic elements such as <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, and <code>&lt;section&gt;</code>, which help in better structuring the content.
+          </p>
+        </article>
+      </section>
+
+      <!-- CSS Section -->
+      <section class="main-section" id="CSS_Introduction">
+        <header>CSS Introduction</header>
+        <article>
+          <p>
+            CSS (Cascading Style Sheets) is used to control the presentation of HTML elements. It allows you to change the appearance of your webpage, including layout, colors, fonts, and more, by linking styles to HTML elements.
+          </p>
+          <p>
+            Using CSS, you can control the design of multiple pages from a single external stylesheet or apply styles directly within HTML files.
+          </p>
+        </article>
+      </section>
+
+      <section class="main-section" id="CSS_and_HTML">
+        <header>CSS and HTML Together</header>
+        <article>
+          <p>
+            HTML structures the content, while CSS is used to style and lay out that content. Let's look at an example where both are combined:
+          </p>
+          <code>
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &nbsp;&lt;head&gt;<br>
+            &nbsp;&nbsp;&lt;link rel="stylesheet" href="styles.css"&gt;<br>
+            &nbsp;&lt;/head&gt;<br>
+            &nbsp;&lt;body&gt;<br>
+            &nbsp;&nbsp;&lt;h1&gt;Hello, World!&lt;/h1&gt;<br>
+            &nbsp;&nbsp;&lt;p&gt;This is a paragraph.&lt;/p&gt;<br>
+            &nbsp;&lt;/body&gt;<br>
+            &lt;/html&gt;
+          </code>
+          <p>
+            In this example, HTML defines the structure with headings and paragraphs, and the linked CSS (in "styles.css") will control how the page looks visually.
+          </p>
+        </article>
+      </section>
+
+      <section class="main-section" id="Selectors">
+        <header>CSS Selectors</header>
+        <article>
+          <p>
+            CSS selectors are used to target HTML elements that you want to style. Common selectors include:
+          </p>
+          <ul>
+            <li>Element selector: <code>h1 { color: blue; }</code> (Targets all <code>&lt;h1&gt;</code> elements)</li>
+            <li>Class selector: <code>.button { background-color: red; }</code> (Targets elements with the <code>class="button"</code> attribute)</li>
+            <li>ID selector: <code>#header { font-size: 20px; }</code> (Targets the element with the <code>id="header"</code> attribute)</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="main-section" id="Box_model">
+        <header>CSS Box Model</header>
+        <article>
+          <p>
+            Every HTML element is considered as a box, and the CSS Box Model is used to define the size and spacing of elements. It includes:
+          </p>
+          <ul>
+            <li>Content: The actual content of the box (e.g., text or images).</li>
+            <li>Padding: The space between the content and the border.</li>
+            <li>Border: The line surrounding the padding (or content if padding is not specified).</li>
+            <li>Margin: The space outside the border between other elements.</li>
+          </ul>
+          <p>Example:</p>
+          <code>
+            p { <br>
+            &nbsp;&nbsp;margin: 20px;<br>
+            &nbsp;&nbsp;padding: 10px;<br>
+            &nbsp;&nbsp;border: 1px solid black;<br>
+            }
+          </code>
+        </article>
+      </section>
+
+      <section class="main-section" id="Flexbox">
+        <header>CSS Flexbox</header>
+        <article>
+          <p>
+            Flexbox is a layout model that allows you to design flexible and responsive layout structures without using float or positioning.
+          </p>
+          <p>Example:</p>
+          <code>
+            .container {<br>
+            &nbsp;&nbsp;display: flex;<br>
+            &nbsp;&nbsp;justify-content: space-around;<br>
+            }
+          </code>
+          <p>This will align items inside the container evenly, with space between them.</p>
+        </article>
+      </section>
+
+      <section class="main-section" id="Grid">
+        <header>CSS Grid</header>
+        <article>
+          <p>
+            CSS Grid Layout is a two-dimensional layout system for the web that allows you to create complex layouts with rows and columns.
+          </p>
+          <p>Example:</p>
+          <code>
+            .grid-container {<br>
+            &nbsp;&nbsp;display: grid;<br>
+            &nbsp;&nbsp;grid-template-columns: auto auto auto;<br>
+            &nbsp;&nbsp;grid-gap: 10px;<br>
+            }
+          </code>
+          <p>This example creates a grid layout with three equal columns.</p>
+        </article>
+      </section>
+
+      <!-- Reference Section -->
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+          <ul>
+            <li>
+              All the documentation in this page is taken from
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guide"
+                target="_blank"
+                >MDN</a
+              >
+            </li>
+            <li>
+              For more in-depth information, check out the official CSS
+              specifications on
+              <a href="https://www.w3.org/TR/CSS/" target="_blank">W3C</a>.
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
+    <script src="main.js"></script>
+
+  </body>
+</html>

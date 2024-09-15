@@ -1,0 +1,232 @@
+/* * {margin: 0;
+padding: 0 0 5px 0;}*/
+html {
+    background: #ede7f6;
+}
+html {
+    font-family: sans-serif, serif;
+    font-size: 10px;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+        'Helvetica Neue', Arial, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #333;
+    margin: 0;
+}
+
+#a, #b {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar {
+    background-color: rgba(0, 0, 0, 0.466);
+    padding: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.466);
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px;
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    color: #FF9CA8;
+}
+
+#img {
+    text-align: center;
+}
+
+#image {
+    display: inline-block;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    width: 180px;
+}
+
+#image img {
+    width: 100%;
+    height: auto;
+}
+
+#steps {
+    background-color: black;
+    border-radius: 20px;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+#b > ul > li > a {
+    color: white;
+}
+
+.plan, .practice, .languages {
+    background-color: black;
+    display: block;
+    border: 1px solid skyblue;
+    margin: 20px;
+    border-radius: 5px;
+    padding: 8px;
+    color: #ffffff;
+}
+
+#contact-us {
+    color: white;
+    background-color: black;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: auto;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    color: black;
+}
+
+#about-us {
+    background-color: black;
+    color: white;
+    padding: 7px;
+    margin: 10px;
+    border-radius: 8px;
+    font-style: italic;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: black;
+    color: #007bff;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+span {
+    color: #007bff;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+input {
+    padding: 0;
+}
+
+p {
+    background-color: #ede7f6;
+    color: black;
+}
+
+h2 {
+    text-align: center;
+}
+
+#home {
+    padding: 0 5px;
+    text-align: left;
+}
+
+#steps {
+    margin: 6px;
+}
+
+#center {
+    text-align: center;
+}
+
+input, select {
+    border: 0.5px solid rgba(0, 123, 255, 0.5);
+    margin: 5px 0;
+}
+
+#name1, #email1, #tel1 {
+    background-color: rgba(0, 166, 255, 0.8);
+    color: white;
+    font-style: normal;
+    font-weight: normal;
+    padding: 5px;
+    border-radius: 5px;
+}
+img {border-radius: 5px;}
+@media only screen and (min-width: 1024px){
+body{
+    font-size: 20px;
+    font-weight: bold;
+}
+h1 {
+    font-weight: bolder;
+}
+
+#c {
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.plan{
+    grid-column: span 2;
+    justify-self: center;
+    width: 50%;
+}
+}
+.go, .go>p {
+    color: white;
+    padding: 7px;
+    border-radius: 8px;
+    font-style: italic;
+    font-weight: bold;
+    background-color: #7e57c2;
+   
+}
+.go {
+    align-self: center;
+    max-width: 60vw;
+    position: relative;
+    margin: 0 auto;
+    transition: all 0.2s ease;
+}
+.go:hover {
+    transform: scale(1.04);
+}
+a {
+    color: rgb(249, 236, 211);
+}

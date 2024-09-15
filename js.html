@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="js.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>JavaScript Documentation</header>
+      <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#What_you_should_already_know">What you should already know</a></li>
+        <li><a class="nav-link" href="#Hello_world">Hello World</a></li>
+        <li><a class="nav-link" href="#Variables">Variables</a></li>
+        <li><a class="nav-link" href="#Data_Types">Data Types</a></li>
+        <li><a class="nav-link" href="#Functions">Functions</a></li>
+        <li><a class="nav-link" href="#Conditionals">Conditionals</a></li>
+        <li><a class="nav-link" href="#Loops">Loops</a></li>
+        <li><a class="nav-link" href="#DOM_Manipulation">DOM Manipulation</a></li>
+        <li><a class="nav-link" href="#Events">Events</a></li>
+        <li><a class="nav-link" href="#Reference">Reference</a></li>
+      </ul>
+    </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <article>
+          <p>
+            JavaScript is a high-level, dynamic programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. It allows for dynamic and interactive content on web pages.
+          </p>
+          <ul>
+            <li>JavaScript is essential for creating interactive, responsive web applications.</li>
+            <li>It can be used to manipulate the DOM (Document Object Model), handle events, and create animations.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="main-section" id="What_you_should_already_know">
+        <header>What you should already know</header>
+        <article>
+          <p>This guide assumes you have the following basic background:</p>
+          <ul>
+            <li>Basic understanding of HTML and CSS.</li>
+            <li>Familiarity with how the web works and what browsers do.</li>
+            <li>Experience with a text editor to write JavaScript code.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="main-section" id="Hello_world">
+        <header>Hello World</header>
+        <article>
+          <p>
+            A "Hello World" example is often the simplest way to start with any programming language. Here’s how you can write it in JavaScript:
+          </p>
+          <code>
+            <script>
+              console.log('Hello World');
+            </script>
+          </code>
+          <p>
+            This will log the text "Hello World" in your browser’s developer console.
+          </p>
+        </article>
+      </section>
+
+      <section class="main-section" id="Variables">
+        <header>Variables</header>
+        <article>
+          <p>
+            Variables store data values in JavaScript. You can create variables using `var`, `let`, or `const`:
+          </p>
+          <code>
+            let name = "John"; <br>
+            const age = 30;
+          </code>
+          <p>`let` allows you to reassign values, while `const` creates a variable that cannot be reassigned.</p>
+        </article>
+      </section>
+
+      <section class="main-section" id="Data_Types">
+        <header>Data Types</header>
+        <article>
+          <p>JavaScript supports different data types, including:</p>
+          <ul>
+            <li>String: A sequence of characters (e.g., `"Hello"`)</li>
+            <li>Number: Numeric values (e.g., `10`, `3.14`)</li>
+            <li>Boolean: True or False values (e.g., `true`, `false`)</li>
+            <li>Array: A collection of values (e.g., `[1, 2, 3]`)</li>
+            <li>Object: A collection of key-value pairs (e.g., `{name: 'John', age: 30}`)</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="main-section" id="Functions">
+        <header>Functions</header>
+        <article>
+          <p>
+            Functions allow you to define reusable blocks of code. You can declare a function using the `function` keyword:
+          </p>
+          <code>
+            function greet() { <br>
+              console.log('Hello!'); <br>
+            }
+          </code>
+          <p>To call a function, simply use its name followed by parentheses:</p>
+          <code>greet();</code>
+        </article>
+      </section>
+
+      <section class="main-section" id="Conditionals">
+        <header>Conditionals</header>
+        <article>
+          <p>Conditional statements control the flow of code based on conditions:</p>
+          <code>
+            let age = 20; <br>
+            if (age >= 18) { <br>
+              console.log('You are an adult'); <br>
+            } else { <br>
+              console.log('You are a minor'); <br>
+            }
+          </code>
+        </article>
+      </section>
+
+      <section class="main-section" id="Loops">
+        <header>Loops</header>
+        <article>
+          <p>Loops allow you to execute a block of code multiple times. The most common loop types are `for` and `while` loops:</p>
+          <code>
+            for (let i = 0; i < 5; i++) { <br>
+              console.log(i); <br>
+            }
+          </code>
+        </article>
+      </section>
+
+      <section class="main-section" id="DOM_Manipulation">
+        <header>DOM Manipulation</header>
+        <article>
+          <p>
+            JavaScript can manipulate HTML elements by accessing the DOM (Document Object Model). Use methods like `getElementById()` or `querySelector()` to select and manipulate elements:
+          </p>
+          <code>
+            document.getElementById('myElement').innerText = 'New Text';
+          </code>
+        </article>
+      </section>
+
+      <section class="main-section" id="Events">
+        <header>Events</header>
+        <article>
+          <p>
+            JavaScript allows you to handle user interactions through events. An event listener can be added to an element to trigger a function when a specific event occurs:
+          </p>
+          <code>
+            document.getElementById('myButton').addEventListener('click', function() { <br>
+              alert('Button clicked!'); <br>
+            });
+          </code>
+        </article>
+      </section>
+
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+          <ul>
+            <li>All the documentation in this page is based on the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank">MDN JavaScript Guide</a>.</li>
+            <li>Check out the official <a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/" target="_blank">ECMAScript standard</a> for more details on the JavaScript language specification.</li>
+            <li>Check out the book Eloquent Javascript by Marijn Harvebeke.</li>
+
+          </ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
