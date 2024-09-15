@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<main>
+    <body>
+        <script type="text/javascript">
+            var redirectTo = window.location.pathname;
+            if (!redirectTo.startsWith("/")){
+                redirectTo = "/" + redirectTo;
+            }
+            window.location.href = "/ index.html" + "#" + redirectTo;
+        </script>
+    </body>
+</main>
